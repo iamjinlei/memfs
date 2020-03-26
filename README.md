@@ -13,5 +13,11 @@ fs, _ := memfs.New(map[string][]byte{
 
 srv := &http.Server{Addr: ":8080"}
 http.Handle("/", http.StripPrefix("/", http.FileServer(fs)))
-srv.ListenAndServe();
+srv.ListenAndServe()
+```
+
+Check the example folder for a working implementation
+
+```bash
+go run example/fileserver.go
 ```
