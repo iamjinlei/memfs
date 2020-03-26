@@ -1,6 +1,6 @@
 # MemFS
 
-MemFS that implements http.FileSystem and http.File interface for quick mock up a in-memory http server
+MemFS that implements http.FileSystem and http.File interface for quick mock up an in-memory http server
 
 ```golang
 
